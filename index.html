@@ -10,41 +10,81 @@
         li {
             color: yellowgreen;
         }
+
+        #fruits-title {
+            color: black;
+        }
+
+        .important-places {
+            color: blueviolet;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam consequuntur quaerat incidunt iure
+            praesentium, exercitationem at reiciendis hic quae id quis quia culpa accusamus adipisci? Nisi ad accusamus
+            eligendi omnis!</p>
     </header>
     <main>
-        <h1>My Awesome DOM</h1>
-        <ul>
-            <li>Jalali Set</li>
-            <li>Shafayet</li>
-            <li>Bonobash</li>
-            <li>Dom dere BABA</li>
-        </ul>
-        <ul>
-            <li>Apple</li>
-            <li>Banana</li>
-            <li>Orange</li>
-        </ul>
+        <section>
+            <h1>My Awesome DOM</h1>
+            <ul>
+                <li>Jalali Set</li>
+                <li>Shafayet</li>
+                <li>Bonobash</li>
+                <li>Dom dere BABA</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title">Fruits I Like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places">Places I like to visit</h1>
+            <ul>
+                <li class="important-places">Shundorban</li>
+                <li class="important-places">Bandarban</li>
+                <li class="important-places">Kataban</li>
+                <li class="important-places">Shalban</li>
+            </ul>
+        </section>
     </main>
     <footer>
 
     </footer>
     <script src="js/dom.js"></script>
     <script>
+        // ------GetElementsByTagName----------------
         const liCollection = document.getElementsByTagName('li')
-        console.log(liCollection);
+        // console.log(liCollection);
         for (const li of liCollection) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
         const allHeadings = document.getElementsByTagName('h1');
-        console.log(allHeadings);
+        // console.log(allHeadings);
         for (const head of allHeadings) {
-            console.log(head.innerText);
+            // console.log(head.innerText);
+        }
+
+
+        // -----GetElementById-----------
+        const fruits = document.getElementById('fruits-title');
+        console.log(fruits.innerText);
+        fruits.innerText = 'Fruits list changed by JS';
+
+
+        // -----GetElementsByClass-----
+        const places = document.getElementsByClassName('important-places');
+        console.log(places);
+        for (const place of places) {
+            console.log(place.innerText);
         }
     </script>
 </body>
