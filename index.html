@@ -23,6 +23,12 @@
             <li>Jalali Set</li>
             <li>Shafayet</li>
             <li>Bonobash</li>
+            <li>Dom dere BABA</li>
+        </ul>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
         </ul>
     </main>
     <footer>
@@ -30,14 +36,16 @@
     </footer>
     <script src="js/dom.js"></script>
     <script>
-        const student = {
-            name: 'Rakib',
-            id: 2868,
-            study: function (time) {
-                console.log(time, 'Study kortese');
-            }
+        const liCollection = document.getElementsByTagName('li')
+        console.log(liCollection);
+        for (const li of liCollection) {
+            console.log(li.innerText);
         }
-        console.log('Inside the html file');
+        const allHeadings = document.getElementsByTagName('h1');
+        console.log(allHeadings);
+        for (const head of allHeadings) {
+            console.log(head.innerText);
+        }
     </script>
 </body>
 
