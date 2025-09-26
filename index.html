@@ -7,7 +7,7 @@
     <title>Document Object Model</title>
     <link rel="stylesheet" href="styles/style.css">
     <style>
-        li {
+        .fruits-container li {
             color: yellowgreen;
         }
 
@@ -38,7 +38,7 @@
                 <li>Dom dere BABA</li>
             </ul>
         </section>
-        <section>
+        <section class="fruits-container">
             <h1 id="fruits-title">Fruits I Like</h1>
             <ul>
                 <li>Apple</li>
@@ -74,9 +74,9 @@
         }
 
 
-        // -----GetElementById-----------
+        // -----GetElementById-----
         const fruits = document.getElementById('fruits-title');
-        console.log(fruits.innerText);
+        // console.log(fruits.innerText);
         fruits.innerText = 'Fruits list changed by JS';
 
 
@@ -84,8 +84,20 @@
         const places = document.getElementsByClassName('important-places');
         console.log(places);
         for (const place of places) {
-            console.log(place.innerText);
+            // console.log(place.innerText);
         }
+
+
+        // -----QuerySelectorAll-----
+        const someLi = document.querySelectorAll('.fruits-container li');
+        console.log(someLi);
+        for (const li of someLi) {
+            console.log(li);
+        }
+
+
+        // -----QuerySelector-----
+        
     </script>
 </body>
 
