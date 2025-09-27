@@ -9,6 +9,8 @@ for (const section of sections) {
     section.style.backgroundColor = 'lightgrey'
 }
 
-const placeSection = document.getElementById('place-section');
+// const placeSection = document.getElementById('place-section');
 // placeSection.style.backgroundColor = 'yellow'
-placeSection.classList.add('yellow-bg');
+// placeSection.classList.add('yellow-bg');
+const placeSection = document.getElementById('place-section');
+placeSection.classList.add('text-align','large-text');
