@@ -10,4 +10,5 @@ for (const section of sections) {
 }
 
 const placeSection = document.getElementById('place-section');
-placeSection.style.backgroundColor = 'yellow'
+// placeSection.style.backgroundColor = 'yellow'
+placeSection.classList.add('yellow-bg');
