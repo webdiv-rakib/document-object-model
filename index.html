@@ -18,6 +18,9 @@
         .important-places {
             color: blueviolet;
         }
+        .yellow-bg{
+            background-color: lightgreen;
+        }
     </style>
 </head>
 
@@ -46,7 +49,7 @@
                 <li>Orange</li>
             </ul>
         </section>
-        <section>
+        <section id="place-section" class="yellow-bg">
             <h1 id="places">Places I like to visit</h1>
             <ul>
                 <li class="important-places">Shundorban</li>
@@ -60,6 +63,7 @@
 
     </footer>
     <script src="js/dom.js"></script>
+    <script src="js/styleInJs.js"></script>
     <script>
         // ------GetElementsByTagName----------------
         const liCollection = document.getElementsByTagName('li')
