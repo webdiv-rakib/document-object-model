@@ -35,3 +35,5 @@ ul.appendChild(li3);
 
 section.appendChild(ul);
 mainContainer.appendChild(section);
+// will practice others soon
+// just busy with daily life
