@@ -37,3 +37,5 @@ section.appendChild(ul);
 mainContainer.appendChild(section);
 // will practice others soon
 // just busy with daily life
+// will start working from today
+// please give me some times than i will rock everyone
