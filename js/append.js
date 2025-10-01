@@ -39,3 +39,5 @@ mainContainer.appendChild(section);
 // just busy with daily life
 // will start working from today
 // please give me some times than i will rock everyone
+// today we will travel to sylhet so busy cant code today
+// will start coding tomorrow
