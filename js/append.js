@@ -51,6 +51,7 @@ const mainContainer2 = document.getElementById('main-container');
 
 // 2. what to be added
 const section2 = document.createElement('section');
+section2.style.backgroundColor = 'blue'
 const h2 = document.createElement('h1');
 h2.innerText = 'Currently Visited Location';
 section2.appendChild(h2);
