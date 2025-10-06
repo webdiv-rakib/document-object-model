@@ -43,3 +43,36 @@ mainContainer.appendChild(section);
 // will start coding tomorrow
 // today i just return form tour and will be start working from today
 // sorry for the late
+
+
+// -------------Practice------------------
+// 1. where to be added
+const mainContainer2 = document.getElementById('main-container');
+
+// 2. what to be added
+const section2 = document.createElement('section');
+const h2 = document.createElement('h1');
+h2.innerText = 'Currently Visited Location';
+section2.appendChild(h2);
+
+const ul2 = document.createElement('ul');
+
+const li4 = document.createElement('li');
+li4.innerText = 'Sylhet';
+ul2.appendChild(li4);
+
+const li5 = document.createElement('li');
+li5.innerText = 'Bichanakandi';
+ul2.appendChild(li5);
+
+const li6 = document.createElement('li');
+li6.innerText = 'Pantomai';
+ul2.appendChild(li6);
+
+const li7 = document.createElement('li');
+li7.innerText = 'Jaflong';
+ul2.appendChild(li7);
+
+section2.appendChild(ul2);
+mainContainer2.appendChild(section2);
+
