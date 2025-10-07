@@ -19,3 +19,7 @@ document.getElementById('post-btn').addEventListener('click', function () {
     // step-4: clear the text area
     commentBox.value = '';
 })
+
+// ------------Practice------------
+const h1 = document.getElementById('facebook');
+h1.style.fontSize = '2em';
