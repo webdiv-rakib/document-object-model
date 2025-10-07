@@ -21,5 +21,4 @@ document.getElementById('post-btn').addEventListener('click', function () {
 })
 
 // ------------Practice------------
-const h1 = document.getElementById('facebook');
-h1.style.fontSize = '2em';
+

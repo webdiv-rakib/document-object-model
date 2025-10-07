@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="fb"><u>Facebook</u></h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h3>Your comments about facebook:</h3>
+                <div id="comment-container">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, tempore.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam dicta sunt repellat quae,
+                        deserunt voluptatum qui quod facere illo reprehenderit.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius atque esse fuga magnam quam
+                        corrupti eos dolores aspernatur deleniti? Voluptas laudantium modi consectetur obcaecati,
+                        asperiores necessitatibus aliquid ullam nobis incidunt.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequatur odio nesciunt
+                        eligendi! Consectetur, amet hic cumque soluta molestiae corrupti rerum voluptatibus debitis!
+                        Saepe porro sunt odit? Libero ratione ea, assumenda laudantium obcaecati ducimus provident ex
+                        ullam maxime. Vero, ad!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quos esse reprehenderit
+                        corporis! Amet mollitia unde ratione. Temporibus odit repellat, veritatis dolorum quae cumque
+                        delectus, laborum voluptates saepe atque sapiente animi ex laboriosam est? Earum, culpa?
+                        Eligendi illo excepturi numquam soluta libero, fugit a quam blanditiis iure ut eum facere?</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Comment Box:</h3>
+            <textarea name="" id="comment-box" cols="80" rows="5"
+                placeholder="Drop your comment about facebook"></textarea><br>
+            <button id="post-btn">Post</button>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        document.getElementById('post-btn').addEventListener('click', function () {
+            const commentBox = document.getElementById('comment-box');
+            const newComment = commentBox.value;
+            const commentContainer = document.getElementById('comment-container');
+            const p = document.createElement('p');
+            p.innerText = newComment;
+            commentContainer.appendChild(p);
+
+            commentBox.value = '';
+        })
+    </script>
+    <script src="js/practice.js"></script>
+</body>
+
+</html>
