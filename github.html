@@ -9,16 +9,34 @@
 
 <body>
     <header>
-
+        <h1 id="info">My Secret Information</h1>
     </header>
     <main>
-
+        <section>
+            <div>
+                <input type="text" name="" id="delete-field" placeholder="please type delete to confirm">
+                <button id="btn-delete" disabled>Delete</button>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
     <script>
-        
+        document.getElementById('delete-field').addEventListener('keyup', function (event) {
+            const text = event.target.value;
+            const deleteBtn = document.getElementById('btn-delete');
+            if (text === 'delete') {
+                deleteBtn.removeAttribute('disabled');
+            }
+            else {
+                deleteBtn.setAttribute('disabled',true);
+            }
+        })
+        document.getElementById('btn-delete').addEventListener('click', function () {
+            const secret = document.getElementById('info');
+            secret.style.display = 'none';
+        })
     </script>
 </body>
 
