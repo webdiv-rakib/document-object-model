@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Facebook</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <input type="text" name="" id="input-box">
+                <button id="btn" disabled>Remove</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        // disable remove button and re-enable remove button base on condition
+        document.getElementById('input-box').addEventListener('keyup', function (event) {
+            const inputText = event.target.value;
+            const removeBtn = document.getElementById('btn');
+            if (inputText === 'delete') {
+                removeBtn.removeAttribute('disabled');
+            }
+            else {
+                removeBtn.setAttribute('disabled');
+            }
+        })
+        // For button task
+        document.getElementById('btn').addEventListener('click', function () {
+            const h1Title = document.getElementById('title');
+            h1Title.style.display = 'none';
+        })
+
+    </script>
+</body>
+
+</html>
