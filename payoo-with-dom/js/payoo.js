@@ -1,0 +1,1 @@
+console.log('Payoo Mobile Bank js connected');
