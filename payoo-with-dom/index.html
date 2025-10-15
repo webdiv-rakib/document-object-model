@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo Mobile Bank</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/Group.png" type="image/x-icon">
 
     <!-- Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -19,15 +20,28 @@
 </head>
 
 <body class="font-outfit">
-    <header>
-        <h1>Payoo Mobile Bank</h1>
-    </header>
-    <main>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display grid place-content-center bg-white">
+                <!-- Log In Form -->
+                <section id="log-in-form">
+                    <div class="flex flex-col justify-center items-center relative">
+                        <img class="h-[250px]" src="assets/bg.png" alt="">
+                        <img class="absolute" src="assets/Group.png" alt="">
+                    </div>
+                    <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+                        <label class="label font-bold text-black">Mobile Number</label>
+                        <input type="tel" class="input focus:outline-none" placeholder="Mobile" />
+                        <label class="label font-bold text-black">4 Digit Pin</label>
+                        <input type="password" class="input focus:outline-none" placeholder="Enter 4 Digit Pin" />
 
+                        <button class="btn rounded-full text-white mt-4 bg-[#0874f2]">Login</button>
+                    </fieldset>
+                </section>
+            </div>
+        </div>
     </main>
-    <footer>
-
-    </footer>
     <script src="js/payoo.js"></script>
 </body>
 
