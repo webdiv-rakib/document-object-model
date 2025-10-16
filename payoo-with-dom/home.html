@@ -100,7 +100,7 @@
                             <h1 class="font-bold text-xl">Add Money</h1>
                             <fieldset class="fieldset">
                                 <legend class="fieldset-legend font-semibold text-lg">Select Bank</legend>
-                                <select class="select">
+                                <select class="select" required>
                                     <option disabled selected>Select Bank</option>
                                     <option>DBBL Bank</option>
                                     <option>Islamic Bank</option>
@@ -110,7 +110,7 @@
                             <fieldset class="fieldset">
                                 <legend class="fieldset-legend font-semibold text-lg">Bank Account Number</legend>
                                 <input type="text" class="input focus:outline-none"
-                                    placeholder="Enter 11 digit account number" />
+                                    placeholder="Enter 11 digit account number" required/>
                             </fieldset>
                             <fieldset class="fieldset">
                                 <legend class="fieldset-legend font-semibold text-lg">Amount to Add</legend>
@@ -135,17 +135,17 @@
                             <fieldset class="fieldset">
                                 <legend class="fieldset-legend font-semibold text-lg">Agent Number</legend>
                                 <input type="text" class="input focus:outline-none"
-                                    placeholder="Enter 11 digit number" />
+                                    placeholder="Enter 11 digit number" required/>
                             </fieldset>
                             <fieldset class="fieldset">
                                 <legend class="fieldset-legend font-semibold text-lg">Amount to Add</legend>
                                 <input id="cashout-amount" type="text" class="input focus:outline-none"
-                                    placeholder="Add Amount to withdraw"/>
+                                    placeholder="Add Amount to withdraw" required/>
                             </fieldset>
                             <fieldset class="fieldset">
                                 <legend class="fieldset-legend font-semibold text-lg">Pin Number</legend>
                                 <input id="cashout-pin" type="text" class="input focus:outline-none"
-                                    placeholder="Enter 4 digit pin number"/>
+                                    placeholder="Enter 4 digit pin number" required/>
                             </fieldset>
                             <div class="mt-6 text-center">
                                 <button id="btn-cashout-money" class="btn btn-primary btn-block rounded-full w-1/2">Withdraw Money</button>
