@@ -39,13 +39,18 @@
                         <button id="log-out" class="btn btn-soft text-[#838383]">Log Out</button>
                     </div>
                 </div>
+
                 <div class="divider"></div>
+
                 <div>
                     <div>
                         <h1 class="font-bold text-3xl">Welcome To Payooo!</h1>
                         <p class="text-[#838383]">Enjoy easy and convenient financial services with us. Cashout charge
                             is low</p>
                     </div>
+
+
+                    <!-- User action section -->
                     <div class="grid grid-cols-3 gap-2 mt-6">
                         <!-- <button class="border-1 rounded-lg flex flex-col items-center py-4 shadow-xl border-[#838383]">
                             <img src="assets/wallet1.png" alt="">
@@ -53,13 +58,13 @@
                         </button> -->
 
                         <!-- Add Money Button -->
-                        <button class="btn btn-xl flex flex-col items-center py-10">
+                        <button id="add-money" class="btn btn-xl flex flex-col items-center py-10">
                             <img src="assets/wallet1.png" alt="">
                             <p class="font-light text-sm">Add Money</p>
                         </button>
 
                         <!-- Cashout Button -->
-                        <button class="btn btn-xl flex flex-col items-center py-10">
+                        <button id="cash-out" class="btn btn-xl flex flex-col items-center py-10">
                             <img src="assets/send1.png" alt="">
                             <p class="font-light text-sm">Cashout</p>
                         </button>
@@ -88,6 +93,38 @@
                             <p class="font-light text-sm">Transactions</p>
                         </button>
                     </div>
+                    <section class="mt-5">
+                        <form action="">
+                            <h1 class="font-bold text-xl">Add Money</h1>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend font-semibold text-lg">Select Bank</legend>
+                                <select class="select">
+                                    <option disabled selected>Select Bank</option>
+                                    <option>DBBL Bank</option>
+                                    <option>Islamic Bank</option>
+                                    <option>EB Bank</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend font-semibold text-lg">Bank Account Number</legend>
+                                <input type="text" class="input focus:outline-none"
+                                    placeholder="Enter 11 digit account number" />
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend font-semibold text-lg">Amount to Add</legend>
+                                <input type="text" class="input focus:outline-none"
+                                    placeholder="Add Amount to withdraw" />
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend font-semibold text-lg">Pin Number</legend>
+                                <input type="text" class="input focus:outline-none"
+                                    placeholder="Enter 4 digit pin number" />
+                            </fieldset>
+                            <div class="mt-6 text-center">
+                                <button class="btn btn-primary btn-block rounded-full w-1/2">Add Money</button>
+                            </div>
+                        </form>
+                    </section>
                 </div>
             </div>
         </div>
