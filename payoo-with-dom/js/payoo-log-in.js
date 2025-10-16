@@ -4,7 +4,7 @@ document.getElementById('log-in-btn').addEventListener('click', function (event)
     const phoneNumber = document.getElementById('phone-number').value;
     const pinNumber = document.getElementById('password').value;
 
-    if (phoneNumber === '5' && pinNumber === '12345') {
+    if (phoneNumber === '01794181719' && pinNumber === '12345') {
         console.log('You are logged in')
 
         //to open in same tab
