@@ -13,3 +13,20 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
         alert('something went wrong');
     }
 })
+
+document.getElementById('btn-cashout-money').addEventListener('click', function (event) {
+    event.preventDefault();
+    const inputAmount = document.getElementById('cashout-amount').value;
+    const pinNumber = document.getElementById('cashout-pin').value;
+    if (pinNumber === '12345') {
+        const balance = document.getElementById('current-balance').innerText;
+        const balanceNumber = parseFloat(balance);
+        const inputNumber = parseFloat(inputAmount);
+        const newBalance = balanceNumber - inputNumber;
+        document.getElementById('current-balance').innerText = newBalance;
+    }
+    else {
+        alert('Something went wrong');
+    }
+
+})
