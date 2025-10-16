@@ -15,6 +15,25 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
     }
 })
 
+// Cash Out Functionality
+document.getElementById('btn-cashout-money').addEventListener('click', function (event) {
+    event.preventDefault();
+    const cashOutInput = document.getElementById('cashout-amount').value;
+    const pinNumber = document.getElementById('cashout-pin').value;
+    if (pinNumber === '12345') {
+        const currentBalance = document.getElementById('current-balance').innerText;
+        const cashOutNumber = parseFloat(cashOutInput);
+        const balanceNumber = parseFloat(currentBalance);
+        const newBalance = balanceNumber - cashOutNumber;
+        console.log(newBalance);
+        document.getElementById('current-balance').innerText = newBalance;
+    }
+    else {
+        alert('Something went wrong');
+    }
+})
+
+
 // Extra Section below
 // document.getElementById('add-money').addEventListener('click', function () {
 //     const addMoneySection = document.getElementById('add-money-section');
@@ -47,4 +66,3 @@ document.getElementById('cash-out').addEventListener('click', function () {
     addMoneySection.classList.add('hidden');
 });
 
-// Cash Out Functionality
