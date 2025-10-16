@@ -1,3 +1,4 @@
+// Add Money Functionality
 document.getElementById('btn-add-money').addEventListener('click', function (event) {
     event.preventDefault();
     const addMoneyInput = document.getElementById('add-money-input').value;
@@ -15,7 +16,35 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
 })
 
 // Extra Section below
+// document.getElementById('add-money').addEventListener('click', function () {
+//     const addMoneySection = document.getElementById('add-money-section');
+//     addMoneySection.classList.remove('hidden');
+//     addMoneySection.classList.add('hidden');
+// })
+
+// document.getElementById('cash-out').addEventListener('click', function () {
+//     const cashOutSection = document.getElementById('cashout-money-section');
+//     cashOutSection.classList.remove('hidden');
+//     cashOutSection.classList.add('hidden');
+// })
+
 document.getElementById('add-money').addEventListener('click', function () {
     const addMoneySection = document.getElementById('add-money-section');
-    addMoneySection.classList.toggle('hidden');
-})
+    const cashOutSection = document.getElementById('cashout-money-section');
+    // Show Add Money section
+    addMoneySection.classList.remove('hidden');
+    // Hide Cash Out section
+    cashOutSection.classList.add('hidden');
+});
+
+document.getElementById('cash-out').addEventListener('click', function () {
+    const cashOutSection = document.getElementById('cashout-money-section');
+    const addMoneySection = document.getElementById('add-money-section');
+
+    // Show Cash Out section
+    cashOutSection.classList.remove('hidden');
+    // Hide Add Money section
+    addMoneySection.classList.add('hidden');
+});
+
+// Cash Out Functionality
