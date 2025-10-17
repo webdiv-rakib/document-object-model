@@ -49,3 +49,20 @@ document.getElementById('send-btn').addEventListener('click', function (event) {
         alert('Something went wrong');
     }
 })
+
+// Pay Bill user action
+document.getElementById('pay-now-btn').addEventListener('click', function (event) {
+    event.preventDefault();
+    const payAmount = document.getElementById('pay-amount').value;
+    const payPin = document.getElementById('pay-pin').value;
+    if (payPin === '12345') {
+        const balance = document.getElementById('current-balance').innerText;
+        const balanceNumber = parseFloat(balance);
+        const inputNumber = parseFloat(payAmount);
+        const newBalance = balanceNumber - inputNumber;
+        document.getElementById('current-balance').innerText = newBalance;
+    }
+    else {
+        alert('Something went wrong');
+    }
+})

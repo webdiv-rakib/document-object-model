@@ -82,7 +82,7 @@
                         </button>
 
                         <!-- Pay Bill Button -->
-                        <button class="btn btn-xl flex flex-col items-center py-10">
+                        <button id="pay-now" class="btn btn-xl flex flex-col items-center py-10">
                             <img src="assets/purse1.png" alt="">
                             <p class="font-light text-sm">Pay Bill</p>
                         </button>
@@ -182,7 +182,7 @@
                     </section>
 
                     <!-- Bonus section -->
-                    <section id="get-bonus-section" class="mt-5 transition-all duration-500 ease-in-out">
+                    <section id="get-bonus-section" class="mt-5 transition-all duration-500 ease-in-out hidden">
                         <form action="">
                             <h1 class="font-bold text-xl">Get Bonus</h1>
                             <fieldset class="fieldset">
@@ -190,7 +190,43 @@
                                 <input type="text" class="input focus:outline-none" placeholder="Enter your coupon" />
                             </fieldset>
                             <div class="mt-6 text-center">
-                                <button id="get-bonus" class="btn btn-primary btn-block rounded-full w-1/2">Get Bonus</button>
+                                <button id="get-bonus" class="btn btn-primary btn-block rounded-full w-1/2">Get
+                                    Bonus</button>
+                            </div>
+                        </form>
+                    </section>
+
+                    <!-- Pay now section -->
+                    <section id="pay-bill-section" class="mt-5 transition-all duration-500 ease-in-out hidden">
+                        <form action="">
+                            <h1 class="font-bold text-xl">Pay Bill</h1>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend font-semibold text-lg">Select To Pay</legend>
+                                <select class="select" required>
+                                    <option disabled selected>Select Bank</option>
+                                    <option>DBBL Bank</option>
+                                    <option>Islamic Bank</option>
+                                    <option>EB Bank</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend font-semibold text-lg">Biller Account Number</legend>
+                                <input type="text" class="input focus:outline-none" placeholder="Enter account number"
+                                    required />
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend font-semibold text-lg">Amount to Pay</legend>
+                                <input id="pay-amount" type="text" class="input focus:outline-none"
+                                    placeholder="Add Amount to withdraw" required />
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend font-semibold text-lg">Pin Number</legend>
+                                <input id="pay-pin" type="password" class="input focus:outline-none"
+                                    placeholder="Enter 4 digit pin number" required autocomplete="off" />
+                            </fieldset>
+                            <div class="mt-6 text-center">
+                                <button id="pay-now-btn" class="btn btn-primary btn-block rounded-full w-1/2">Pay
+                                    Now</button>
                             </div>
                         </form>
                     </section>
