@@ -15,7 +15,7 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
     }
 })
 
-// 
+// Cash-out user action
 document.getElementById('btn-cashout-money').addEventListener('click', function (event) {
     event.preventDefault();
     const inputAmount = document.getElementById('cashout-amount').value;
@@ -33,6 +33,7 @@ document.getElementById('btn-cashout-money').addEventListener('click', function 
 
 })
 
+// Transfer money user action
 document.getElementById('send-btn').addEventListener('click', function (event) {
     event.preventDefault();
     const transferAmount = document.getElementById('send-amount').value;
