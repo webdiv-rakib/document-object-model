@@ -64,3 +64,8 @@ document.getElementById('pay-now').addEventListener('click', function () {
     showTransferMoneySection.classList.add('hidden');
 
 })
+
+document.getElementById('transaction-history').addEventListener('click', function () {
+    const showTransactionHistroy = document.getElementById('transaction-section')
+    showTransactionHistroy.classList.remove('hidden');
+})
