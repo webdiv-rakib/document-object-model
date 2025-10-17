@@ -70,7 +70,7 @@
                         </button>
 
                         <!-- Transfer Money Button -->
-                        <button class="btn btn-xl flex flex-col items-center py-10">
+                        <button id="transfer-money" class="btn btn-xl flex flex-col items-center py-10">
                             <img src="assets/money1.png" alt="">
                             <p class="font-light text-sm">Transfer Money</p>
                         </button>
@@ -149,6 +149,31 @@
                             </fieldset>
                             <div class="mt-6 text-center">
                                 <button id="btn-cashout-money" class="btn btn-primary btn-block rounded-full w-1/2">Withdraw Money</button>
+                            </div>
+                        </form>
+                    </section>
+
+                    <!-- Transaction history section -->
+                    <section id="transfer-section" class="mt-5 transition-all duration-500 ease-in-out hidden">
+                        <form action="">
+                            <h1 class="font-bold text-xl">Transfer Money</h1>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend font-semibold text-lg">User Account Number</legend>
+                                <input type="text" class="input focus:outline-none"
+                                    placeholder="Enter 11 digit number" required/>
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend font-semibold text-lg">Amount</legend>
+                                <input id="send-amount" type="text" class="input focus:outline-none"
+                                    placeholder="Enter amount to transfer" required/>
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend font-semibold text-lg">Pin Number</legend>
+                                <input id="send-pin" type="password" class="input focus:outline-none"
+                                    placeholder="Enter 4 digit pin number" required/>
+                            </fieldset>
+                            <div class="mt-6 text-center">
+                                <button id="send-btn" class="btn btn-primary btn-block rounded-full w-1/2">Send Now</button>
                             </div>
                         </form>
                     </section>

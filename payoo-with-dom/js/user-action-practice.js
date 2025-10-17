@@ -1,3 +1,4 @@
+// Add money user action
 document.getElementById('btn-add-money').addEventListener('click', function (event) {
     event.preventDefault();
     const inputAmount = document.getElementById('add-money-input').value;
@@ -14,6 +15,7 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
     }
 })
 
+// 
 document.getElementById('btn-cashout-money').addEventListener('click', function (event) {
     event.preventDefault();
     const inputAmount = document.getElementById('cashout-amount').value;
@@ -29,4 +31,20 @@ document.getElementById('btn-cashout-money').addEventListener('click', function 
         alert('Something went wrong');
     }
 
+})
+
+document.getElementById('send-btn').addEventListener('click', function (event) {
+    event.preventDefault();
+    const transferAmount = document.getElementById('send-amount').value;
+    const transferPin = document.getElementById('send-pin').value;
+    if (transferPin === '12345') {
+        const balance = document.getElementById('current-balance').innerText;
+        const balanceNumber = parseFloat(balance);
+        const inputNumber = parseFloat(transferAmount);
+        const newBalance = balanceNumber - inputNumber;
+        document.getElementById('current-balance').innerText = newBalance;
+    }
+    else {
+        alert('Something went wrong');
+    }
 })
