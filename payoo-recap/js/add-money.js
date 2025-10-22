@@ -3,4 +3,5 @@ console.log('add money js file added');
 // everything is complete
 console.log('new update with atlas os 0.5')
 // gonna again do windows on my pc
-console.log('busy with dowing final year project')
+console.log('busy with dowing final year project');
+console.log('i am a lazy fucker to do my work complete')
