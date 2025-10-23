@@ -1,7 +1,6 @@
-console.log('add money js file added');
-// will start working to day
-// everything is complete
-console.log('new update with atlas os 0.5')
-// gonna again do windows on my pc
-console.log('busy with dowing final year project');
-console.log('i am a lazy fucker to do my work complete')
+document.getElementById('btn-add-money').addEventListener('click', function (event) {
+    event.preventDefault();
+    const addMoney = document.getElementById('add-money-input').value;
+    const pinNumber = document.getElementById('pin-number-input').value;
+    console.log(addMoney, pinNumber);
+})
