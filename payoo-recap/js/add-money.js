@@ -15,10 +15,19 @@
 //         alert('Something went wrong');
 //     }
 // })
-console.log('add money loaded');
+// console.log('add money loaded');
 document.getElementById('btn-add-money').addEventListener('click', function (event) {
     event.preventDefault();
-    console.log('add money button clicked');
+
+    // const addMoney = getInputFieldValueById();
+    // console.log(addMoney);
+    // getInputFieldValueById();
+    // console.log('add money button clicked');
     // const addMoney = document.getElementById('add-money-input').value;
     // const addMoneyNumber = parseFloat(addMoney);
+
+    const addMoney = getInputValue('add-money-input');
+    console.log(addMoney);
+    const inputNumber = getInputValue('pin-number-input');
+    console.log(inputNumber);
 })
