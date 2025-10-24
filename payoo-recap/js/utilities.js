@@ -9,7 +9,15 @@
 //     return addMoney;
 // }
 
-function getInputValue(id) {
-    const inputValue = document.getElementById(id).value;
-    return inputValue;
-}
+// function getInputValue(id) {
+//     const inputValue = document.getElementById(id).value;
+//     const inputNumber = parseFloat(inputValue);
+//     return inputNumber;
+// }
+// function getCurrentBalance(id) {
+//     const currentBalance = document.getElementById(id).innerText;
+//     const currentBalanceNumber = parseFloat(currentBalance);
+//     return currentBalanceNumber;
+// }
+
+// Use common function to do
