@@ -17,4 +17,7 @@
 // })
 // console.log('add money loaded');
 
-// Using Function to do this
+// ============Using Function to do this===============>>>>>
+document.getElementById('').addEventListener('click', function (event) {
+    event.preventDefault();
+})
