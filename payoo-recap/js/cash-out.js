@@ -12,3 +12,10 @@
 //         alert('Something went wrong')
 //     }
 // })
+// <<<===================================>>>>>
+document.getElementById('btn-cashout-money').addEventListener('click', function (event) {
+    event.preventDefault();
+    const cashOutAmount = getInputFieldValue('cashout-amount');
+    const cashOutPin = getInputPinCode('cashout-pin');
+    
+})
