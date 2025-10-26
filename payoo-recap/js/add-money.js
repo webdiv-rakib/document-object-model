@@ -31,3 +31,4 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
         alert('Something went wrong');
     }
 })
+// add money section practice done
