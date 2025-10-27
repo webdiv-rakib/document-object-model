@@ -19,3 +19,5 @@ document.getElementById('btn-cashout-money').addEventListener('click', function 
     const cashOutPin = getInputPinCode('cashout-pin');
     
 })
+
+// city university destroyed 27/10/2025
