@@ -22,3 +22,4 @@ document.getElementById('btn-cashout-money').addEventListener('click', function 
 
 // city university destroyed 27/10/2025
 // dang too lazy to do my work will back soon
+// no atlas os new clean win11 installation
