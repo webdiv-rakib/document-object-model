@@ -35,3 +35,4 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
 // will start working from today
 // another useless day spend with out any work
 // getting lazy day by day
+// will start working after setting up all
