@@ -37,3 +37,4 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
 // getting lazy day by day
 // will start working after setting up all
 // i dont know what to do now
+// 1 by 1 day gone but i have not started yet
