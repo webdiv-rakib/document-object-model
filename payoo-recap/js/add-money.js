@@ -39,3 +39,4 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
 // i dont know what to do now
 // 1 by 1 day gone but i have not started yet
 // apex legends new season just lauched playing with good mood
+// just comment
