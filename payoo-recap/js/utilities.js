@@ -38,3 +38,9 @@ function getInputPinCode(id) {
     const pinCode = document.getElementById(id).value;
     return pinCode;
 }
+
+function showASectionById(id) {
+    const addMoneyForm = document.getElementById(id);
+    
+    return addMoneyForm;
+}
