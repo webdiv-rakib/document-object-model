@@ -1,25 +1,14 @@
-// document.getElementById('btn-cashout-money').addEventListener('click', function (event) {
-//     event.preventDefault();
-//     const amountToAdd = getInputValue('cashout-amount');
-//     const pinNumber = getInputValue('cashout-pin');
-//     if (pinNumber === '12345') {
-//         const currentBalance = getCurrentBalance('current-balance');
-//         const newBalance = currentBalance - amountToAdd;
-//         console.log(newBalance);
-//         document.getElementById('current-balance').innerText = newBalance;
-//     }
-//     else {
-//         alert('Something went wrong')
-//     }
-// })
 // <<<===================================>>>>>
 document.getElementById('btn-cashout-money').addEventListener('click', function (event) {
     event.preventDefault();
+    const currentBalance = getCurrentBalanceText('current-balance');
     const cashOutAmount = getInputFieldValue('cashout-amount');
     const cashOutPin = getInputPinCode('cashout-pin');
-    
+    if (cashOutPin === '12345') {
+        const newBalance = currentBalance - cashOutAmount;
+        document.getElementById('current-balance').innerText = newBalance;
+    }
+    else {
+        alert('Something went wrong');
+    }
 })
-
-// city university destroyed 27/10/2025
-// dang too lazy to do my work will back soon
-// no atlas os new clean win11 installation
