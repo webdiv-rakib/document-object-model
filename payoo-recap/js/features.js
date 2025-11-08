@@ -9,3 +9,7 @@ document.getElementById('cash-out').addEventListener('click', function () {
 document.getElementById('transfer-money').addEventListener('click', function () {
     showASectionById('transfer-section');
 })
+
+document.getElementById('get-bonus').addEventListener('click',function(){
+    showASectionById('get-bonus-section');
+})
