@@ -30,3 +30,5 @@ function showASectionById(id) {
     document.getElementById(id).classList.remove('hidden');
     document.getElementById(id).classList.remove('hidden');
 }
+
+// exam tomorrow will work after finished my exam
