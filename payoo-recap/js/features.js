@@ -13,3 +13,5 @@ document.getElementById('transfer-money').addEventListener('click', function () 
 document.getElementById('get-bonus').addEventListener('click',function(){
     showASectionById('get-bonus-section');
 })
+
+// will start working from today
