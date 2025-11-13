@@ -16,3 +16,4 @@ document.getElementById('get-bonus').addEventListener('click',function(){
 
 // will start working from today
 // bro i am done
+// i quite from this journey
