@@ -19,3 +19,4 @@ document.getElementById('get-bonus').addEventListener('click',function(){
 // i quite from this journey
 // i can not finish this course 
 // i am done here
+// tomorrow is my math quiz i have to work on that then will get into programming
