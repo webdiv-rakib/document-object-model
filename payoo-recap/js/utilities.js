@@ -35,3 +35,4 @@ function showASectionById(id) {
 // first exam complete now waiting for second one
 // just finished my first math quiz
 // just bought and bring my new keyborad and i really enjoying my new keyboard 
+// i dont know what to do but i cant focus on my course cant focus anything
