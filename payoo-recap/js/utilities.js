@@ -36,3 +36,4 @@ function showASectionById(id) {
 // just finished my first math quiz
 // just bought and bring my new keyborad and i really enjoying my new keyboard 
 // i dont know what to do but i cant focus on my course cant focus anything
+// just doing my stuff wills start from tomorrow
