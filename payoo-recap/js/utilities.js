@@ -23,8 +23,12 @@ function showASectionById(id) {
     document.getElementById('cashout-money-section').classList.add('hidden');
     document.getElementById('transfer-section').classList.add('hidden');
     document.getElementById('get-bonus-section').classList.add('hidden');
+    document.getElementById('pay-bill-section').classList.add('hidden');
+    document.getElementById('transaction-section').classList.add('hidden');
 
     // show the section with the provide id as parameter
+    document.getElementById(id).classList.remove('hidden');
+    document.getElementById(id).classList.remove('hidden');
     document.getElementById(id).classList.remove('hidden');
     document.getElementById(id).classList.remove('hidden');
     document.getElementById(id).classList.remove('hidden');
@@ -34,6 +38,6 @@ function showASectionById(id) {
 // exam tomorrow will work after finished my exam
 // first exam complete now waiting for second one
 // just finished my first math quiz
-// just bought and bring my new keyborad and i really enjoying my new keyboard 
+// just bought and bring my new keyborad and i really enjoying my new keyboard
 // i dont know what to do but i cant focus on my course cant focus anything
 // just doing my stuff wills start from tomorrow
