@@ -4,6 +4,12 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
     const inputAddMoney = getInputFieldValue('add-money-input')
     const accountBalance = getCurrentBalanceText('current-balance')
     const pinCode = getInputPinCode('pin-number-input');
+
+    if (isNaN(inputAddMoney)) {
+        alert('Failed to add money');
+        return;
+    }
+
     if (pinCode === '123') {
         const newBalance = accountBalance + inputAddMoney;
         document.getElementById('current-balance').innerText = newBalance;
